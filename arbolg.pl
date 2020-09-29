@@ -48,7 +48,7 @@ sister(X,Y):-woman(X),siblings(X,Y).
 husband(X,Y):-partner(X,Y),man(X).
 wife(X,Y):-partner(X,Y),woman(X).
 father_in_law(X,Y):-partner(Z,Y),father(X,Z).
-mother_in_law(X,Y):-partner(Z,Y),mather(X,Z).
+mother_in_law(X,Y):-partner(Z,Y),mother(X,Z).
 son_in_law(X,Y):-father_in_law(Y,X);mother_in_law(Y,X),man(X).
 daughter_in_law(X,Y):-father_in_law(Y,X);mother_in_law(Y,X), woman(X).
 siblings_in_law(X,Y):-((partner(X,Z),siblings(Z,Y));(partner(Y,Z),siblings(Z,X))).
