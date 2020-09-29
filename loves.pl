@@ -15,6 +15,4 @@ loves(jose,maria).
 loves(juan,jaimito).
 loves(fernando, lurdes).
 loves(alan,vania).
-
-loves(X, Y) :- loves(Y, X).
-
+loves(vania,alan).
